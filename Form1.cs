@@ -9,7 +9,8 @@ namespace appDesktop
 
         private void BtnShowMessage_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola mundo");
+            String message = TxtMessage.Text;
+            MessageBox.Show($"Mensaje escrito: {message}"); 
         }
     }
 }
