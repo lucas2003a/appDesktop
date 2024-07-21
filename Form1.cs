@@ -6,5 +6,10 @@ namespace appDesktop
         {
             InitializeComponent();
         }
+
+        private void BtnShowMessage_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola mundo");
+        }
     }
 }
