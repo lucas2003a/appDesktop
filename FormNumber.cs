@@ -16,5 +16,28 @@ namespace appDesktop
         {
             InitializeComponent();
         }
+
+        private void BtnEvaluateNumber_Click(object sender, EventArgs e)
+        {
+            int number = (int)NumInput.Value;
+            EvaluateNumber(number);
+        }
+
+        private void EvaluateNumber(int number)
+        {
+            if(number % 2 == 0)
+            {
+                ShowMessage($"EL número {number} es par", "Es par", MessageBoxIcon.Information);
+            }
+            else
+            {
+                ShowMessage($"EL número {number} es impar", "Es impar", MessageBoxIcon.Error);
+            }
+        }
+
+        private void ShowMessage(string message, string title, MessageBoxIcon icon) 
+        {
+            MessageBox.Show(message, title, MessageBoxButtons.OK, icon);
+        }
     }
 }

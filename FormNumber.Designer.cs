@@ -28,12 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormNumber";
+            NumInput = new NumericUpDown();
+            BtnEvaluateNumber = new Button();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)NumInput).BeginInit();
+            SuspendLayout();
+            // 
+            // NumInput
+            // 
+            NumInput.Location = new Point(98, 51);
+            NumInput.Name = "NumInput";
+            NumInput.Size = new Size(120, 23);
+            NumInput.TabIndex = 0;
+            // 
+            // BtnEvaluateNumber
+            // 
+            BtnEvaluateNumber.Location = new Point(245, 51);
+            BtnEvaluateNumber.Name = "BtnEvaluateNumber";
+            BtnEvaluateNumber.Size = new Size(75, 23);
+            BtnEvaluateNumber.TabIndex = 2;
+            BtnEvaluateNumber.Text = "Evaluar número";
+            BtnEvaluateNumber.UseVisualStyleBackColor = true;
+            BtnEvaluateNumber.Click += BtnEvaluateNumber_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(30, 53);
+            label1.Name = "label1";
+            label1.Size = new Size(54, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Número:";
+            // 
+            // FormNumber
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(352, 214);
+            Controls.Add(label1);
+            Controls.Add(BtnEvaluateNumber);
+            Controls.Add(NumInput);
+            Name = "FormNumber";
+            Text = "FormNumber";
+            ((System.ComponentModel.ISupportInitialize)NumInput).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private NumericUpDown NumInput;
+        private Button BtnEvaluateNumber;
+        private Label label1;
     }
 }
