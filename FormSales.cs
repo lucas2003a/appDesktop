@@ -28,26 +28,52 @@ namespace appDesktop
 
             decimal descuento = ProcesNumber(number);
 
-            NumTotal.Value = descuento - number;
-            NumDiscount.Value = descuento;
+            try
+            {
+                NumTotal.Value = number - descuento;
+                NumDiscount.Value = descuento;
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            finally 
+            {
+                MessageBox.Show(
+                    $"Descuento : {descuento}\n" +
+                    $"Number : {number}",
+                "Datos"
+                ,MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
 
         }
         private decimal ProcesNumber(decimal number)
         {
             decimal descuento = 0;
 
-            if (number > 100m) //La m al final del número, indica que es un tipo decimal
+            try
             {
-                descuento = number * (decimal)0.05;
 
-            }else if(number >= 150m)
-            {
-                descuento = number * (decimal)0.1;
-            }else if(number >= 200m)
-            {
-                descuento = number * (decimal)0.15;
+                if (number > 100m) //La m al final del número, indica que es un tipo decimal
+                {
+                    descuento = number * (decimal)0.05;
+
+                }else if(number >= 150m)
+                {
+                    descuento = number * (decimal)0.1;
+                }else if(number >= 200m)
+                {
+                    descuento = number * (decimal)0.15;
+                }
+                return descuento;
             }
-            return descuento;
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return 0;
+            }
+
         }
     }
 }
