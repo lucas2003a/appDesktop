@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Doc\" />
+    <Folder Include="res\img\" />
   </ItemGroup>
 
 </Project>

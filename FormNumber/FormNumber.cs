@@ -25,7 +25,7 @@ namespace appDesktop
 
         private void EvaluateNumber(int number)
         {
-            if(number % 2 == 0)
+            if (number % 2 == 0)
             {
                 ShowMessage($"EL número {number} es par", "Es par", MessageBoxIcon.Information);
             }
@@ -35,9 +35,14 @@ namespace appDesktop
             }
         }
 
-        private void ShowMessage(string message, string title, MessageBoxIcon icon) 
+        private void ShowMessage(string message, string title, MessageBoxIcon icon)
         {
             MessageBox.Show(message, title, MessageBoxButtons.OK, icon);
+        }
+
+        private void NumInput_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

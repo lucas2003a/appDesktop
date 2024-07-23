@@ -40,6 +40,7 @@
             NumInput.Name = "NumInput";
             NumInput.Size = new Size(120, 23);
             NumInput.TabIndex = 0;
+            NumInput.ValueChanged += NumInput_ValueChanged;
             // 
             // BtnEvaluateNumber
             // 
