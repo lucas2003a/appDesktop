@@ -23,7 +23,9 @@ Método usado para crear mensajes personalizados.
 ## Opciones para los botones del control MessageBox
 ![Ociones para los botones del control MessageBox](../res/img/MessageBox_optionsButtons.png)
 <br>
-*Cada opción indica los botones que mostrrá el conntrol.*
+*Cada opción indica los botones que mostrará el conntrol.*
 ## Opciones para los íconos del control MessageBox
 ![Opciones para los íconos del control MessageBox](../res/img/MessageBox_optionsIcons.png)
+<br>
+*Cada opción indica el ícono que mostrará el conntrol.*
 
