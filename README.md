@@ -24,7 +24,7 @@
 >	do
 >	{
 >		//Acción que se realiza
-
+>
 >	}while(condicion); //Condición que se evalua posteriormente
 >```
 
