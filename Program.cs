@@ -1,4 +1,4 @@
-namespace appDesktop
+namespace appDesktop.FormMultiplication
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace appDesktop
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormMonths());
+            Application.Run(new FormMultiplication());
         }
     }
 }

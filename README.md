@@ -4,3 +4,4 @@
 - ### [FormNumber](FormNumber/FormNumber.cs) -> Determinar si es par un número (if-else).
 - ### [FormSales](FormSales/FormSales.cs) -> Determinar el descuento por la venta (if-else if).
 - ### [FormMonth](FormMonths/FormMonths.cs) -> Obtener el mes de acuerdo al número seleccionado en el comboBox
+- ### [FormMultiplication](FormMultiplication/FormMultiplication.cs) -> Generar una tabla de multiplicar a partir de un número ingresado (Uso de ListBox)
